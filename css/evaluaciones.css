@@ -1,0 +1,159 @@
+h1{
+	text-align: center;
+	font-size: 3.2vw;
+    margin-bottom: 5%;
+}
+
+#exam{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	
+}
+#exam1{
+	width: 30%;
+	float: left;
+    background-color: white;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 2%;
+}
+#sessionNombre{
+	
+	float: right;
+    
+}
+
+
+
+#exam2{
+	width: 30%;
+	float: left;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 2%;
+	margin-left: 10%;
+}
+#icono{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1vw;
+}
+#icono img{
+    max-width:70%;
+    width:auto;
+    height:auto;
+    max-height:70%;
+}
+#exam p{
+	margin: 20px auto;
+	width: 100%;
+	font-size: 2.5vw;
+	font-family: arial;
+	text-align: center;
+}
+#exam p a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	padding-left: 30%;
+	padding-right: 30% ;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+#txtExam p{
+    font-size: 1.5vw;
+    color: red;
+}
+#txtExam #EvaRea{
+ color: green;
+}
+#btnExam p{
+	text-align:center; 
+    font-weight: bold;
+	font-size: 1.2vw;
+    padding-top:5%; 
+	padding-bottom:5%;
+}
+
+#btnExam{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+	height: 3vw;
+	border-radius: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right:auto;
+    margin-top: 4vw;
+    margin-bottom: 20px;
+}
+.btn1{
+	background-color: green;
+}
+.btn2{
+	background-color: red;
+}
+
+#txtExam2 p{
+    font-size: 1.5vw;
+    color: red;
+}
+#txtExam2 #EvaRea{
+	color: green;
+   }
+#btnExam2 p{
+	text-align:center; 
+    font-weight: bold;
+	font-size: 1.2vw;
+    padding-top:5%; 
+	padding-bottom:5%;
+}
+
+#btnExam2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+	height: 3vw;
+	border-radius: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right:auto;
+    margin-top: 1.7vw;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width:800px ) {
+	h1{
+		font-size: 6vw;
+	}
+	#exam{
+		display: block;	
+	}
+	#exam1{
+		width: 50%;
+		float: none;
+		margin: auto;
+		margin-bottom: 10%;
+		padding-bottom: 1px;
+	}
+	#exam2{
+		width: 50%;
+		float: none;
+		margin: auto ;
+		padding-bottom: 1px;
+	}
+	#icono img{
+		margin-top: 10px;
+	}
+
+}
