@@ -3,7 +3,7 @@ include '../../Config/conexion.php';
 
 $folio = $_SESSION["folio"];
 
-$objeto = new Conexion("localhost","root","","prueba");
+$objeto = new Conexion("localhost","root","Aljjyglc_123","examen_conocimientos2");
                      
 $objeto->conectarBD();
     

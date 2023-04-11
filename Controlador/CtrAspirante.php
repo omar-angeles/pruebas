@@ -6,7 +6,7 @@
 class CtrAspirante{
     function fechasExamenes(){
 
-        $conn = mysqli_connect("localhost","root","","prueba");
+        $conn = mysqli_connect("localhost","root","Aljjyglc_123","examen_conocimientos2");
                 
         $sql="SELECT * FROM fechas_examen"; 	                
         $resultado = mysqli_query($conn,$sql);
@@ -28,7 +28,7 @@ class CtrAspirante{
     }
 
     function DisponibilidadExamen($idAspirante){
-        $conn = mysqli_connect("localhost","root","","prueba");
+        $conn = mysqli_connect("localhost","root","Aljjyglc_123","examen_conocimientos2");
                 
         $sql="SELECT * FROM fechas_examen
                 where id_aspirante = '$idAspirante'"; 	                
@@ -92,7 +92,7 @@ class CtrAspirante{
         //imprimir la sentencia sql
            
         //crear instancia de la clase conexion
-        $conn = mysqli_connect("localhost","root","","prueba");
+        $conn = mysqli_connect("localhost","root","Aljjyglc_123","examen_conocimientos2");
                      
         //establecer conexion a la bd
         
@@ -124,7 +124,7 @@ class CtrAspirante{
     }
 
     function listarPreguntas(){
-        $conn = mysqli_connect("localhost","root","","prueba");
+        $conn = mysqli_connect("localhost","root","Aljjyglc_123","examen_conocimientos2");
             $sql="SELECT *
                 FROM preguntas 
                 ORDER BY RAND() 
@@ -181,7 +181,7 @@ class CtrAspirante{
 
     function resultadosExamenes(){
 
-        $conn = mysqli_connect("localhost","root","","prueba");
+        $conn = mysqli_connect("localhost","root","Aljjyglc_123","examen_conocimientos2");
                 
         $sql="SELECT * FROM respuestas_aspirante"; 	                
         $resultado = mysqli_query($conn,$sql);

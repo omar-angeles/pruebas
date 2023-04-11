@@ -1,9 +1,9 @@
 
 <?php
    $dbhost = "localhost";
-   $password = "";
+   $password = "Aljjyglc_123";
    $usuario = "root";
-   $dbname = "prueba";
+   $dbname = "examenes_conocimientos2";
    $conexion = new mysqli($dbhost, $usuario, $password, $dbname);
    $conexion-> set_charset("utf8");
 
