@@ -141,7 +141,7 @@ class CtrAspirante{
                     $id_pregunta1 = $reg['id_pregunta'];
 
                     $sql2="SELECT *
-                    FROM respuestas 
+                    FROM respuestas_conocimientos
                     where id_pregunta = '$id_pregunta1'";
 
                 $resultado2 = mysqli_query($conn,$sql2);
