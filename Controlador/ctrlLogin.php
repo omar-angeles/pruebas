@@ -9,7 +9,7 @@ if(!empty($_POST["btnIngresar"])){
         $apellidoMaterno = $_POST["apellidoMaterno"];
         $folio = $_POST["folio"];
         
-        $sql = $conexion->query("select * from ASPIRANTES where nombre='$nombre' and paterno='$apellidoPaterno' and materno = '$apellidoMaterno' and id_folio = '$folio'");
+        $sql = $conexion->query("select * from usuarios where nombres='$nombre' and apellido_paterno='$apellidoPaterno' and apellido_materno = '$apellidoMaterno' and folio = '$folio'");
 
         if($datos=$sql->fetch_object()){
             $_SESSION["id"] = $datos->id;

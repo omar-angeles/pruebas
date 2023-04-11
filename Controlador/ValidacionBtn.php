@@ -3,11 +3,11 @@ include '../../Config/conexion.php';
 
 $folio = $_SESSION["folio"];
 
-$objeto = new Conexion("localhost","root","Aljjyglc_123","examen_conocimientos2");
+$objeto = new Conexion("localhost","root","Aljjyglc_123","examen_conocimientos");
                      
 $objeto->conectarBD();
     
-$sql="SELECT F.estatus FROM examenes E,fechas_examen F WHERE F.id_aspirante = $folio AND E.id_examen = F.id_examen AND E.id_tipo = '1'"; 	                
+$sql="SELECT F.estatus FROM examenes_conocimientos E,fechas_examen_conocimientos F WHERE F.id_aspirante = $folio AND E.id_examen = F.id_examen AND E.id_tipo = '1'"; 	                
 $resultado = $objeto->ejecutarQuery($sql);
 
 $resultado=mysqli_fetch_array($resultado);
